@@ -1,14 +1,17 @@
 
 e = (2**80) + 1
 n = 3855338695276690252908107137430493656065677413967434998013726871721184398596748175116146312869263538623
+block_size = len(str(n))//3
+if (block_size * 3 < len(str(n))):
+    block_size += 1
 
-text = "One morning, when Gregor Samsa woke from troubled dreams, he found how"
+
+text = "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed in"
 
 
 def str_to_num(string):
     padding = 32
     pt = string
-    block_size = len(str(n))//3 + 1
     if len(pt) >= block_size:
         strings = [(pt[i:i+(block_size - 1)]) for i in range(0, len(pt), (block_size - 1))]
         
