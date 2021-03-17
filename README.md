@@ -5,4 +5,4 @@ To use simply edit the values of e, n, text inside the script and it will encryp
 
 In cryptools in RSA demonstration to decrypt you have to go to "Alphabet and number system options" and change the method of coding to "Number system" from b-adic.
 
-This system is for educational purposes only, not intended for any other use.
+This script is for educational purposes only, not intended for any other use.
